@@ -1,0 +1,107 @@
+@import './vars';
+
+// COLOR CLASS
+
+.primaryColor {
+    color: $persianGreen  !important;
+}
+
+.secondaryColor {
+    color: $tuna;
+}
+
+// FONT_SIZE_CLASS
+.font_8 {
+    font-size: 8px !important;
+}
+
+.font_12 {
+    font-size: 12px !important;
+}
+
+.font_14 {
+    font-size: 14px !important;
+}
+
+.font_16 {
+    font-size: 16px !important;
+}
+
+.font_18 {
+    font-size: 18px !important;
+}
+
+.font_20 {
+    font-size: 20px !important;
+}
+
+.font_24 {
+    font-size: 24px !important;
+}
+
+// FONT_WEIGHT_CLASS
+
+.fontWeight500 {
+    font-weight: 500 !important;
+}
+
+.fontWeight600 {
+    font-weight: 600 !important;
+}
+
+.fade {
+    opacity: 0.6;
+}
+
+.cursorPointer {
+    cursor: pointer !important;
+}
+
+.notAllowed {
+    cursor: not-allowed;
+}
+
+.error {
+    color: $carmine;
+}
+
+// Breakpoint variables
+
+$lg: 1440;
+$breakpoints: 1400, 1360;
+
+// Required content in media query
+
+@mixin reqContent($breakpoint, $collection) {
+
+    @each $selector,
+    $declaration in $collection {
+        .#{$selector} {
+
+            @each $property,
+            $value in $declaration {
+                #{$property}: #{calc($value / $lg) * $breakpoint}px;
+            }
+        }
+    }
+}
+
+// Responsive breakpoint manager
+
+@mixin mediaQuery($collection) {
+    @each $breakpoint in $breakpoints {
+        @if $breakpoint==1400 {
+            @media (max-width: (#{calc($lg - 1)}px)) and (min-width: (#{$breakpoint}px)) {
+                @include reqContent($breakpoint, $collection);
+                @content;
+            }
+        }
+
+        @if $breakpoint==1360 {
+            @media (max-width: (#{$breakpoint}px)) {
+                @include reqContent($breakpoint, $collection);
+                @content;
+            }
+        }
+    }
+}

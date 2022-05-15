@@ -1,0 +1,59 @@
+@import '../../assets/main';
+
+.signIn {
+    background: rgba(#232323, 0.8);
+    color: #fff;
+    padding: 20px 30px;
+    border-radius: 15px;
+    width: 610px;
+    // margin: 90px auto;
+
+}
+
+.cursorPointer {
+    cursor: pointer;
+    width: fit-content;
+    height: fit-content;
+}
+
+.crossIcon {
+    width: 25px;
+    height: 25px;
+}
+
+.singninContainer {
+    overflow: 'scroll' !important;
+}
+
+.subHeading {
+    color: #fff;
+}
+
+.signUpFields {
+    border-radius: 3px;
+    background-color: #c6d3d2 !important;
+    position: relative;
+    border: 1px solid #c6d3d2 !important;
+    outline: none !important;
+    color: #000000;
+    font-family: $font_Poppins_sans_serif  !important;
+}
+
+.signUpFieldsContainer {
+    fieldset {
+        display: none;
+    }
+}
+
+.loginBtn {
+    width: 80% !important;
+    height: 50px !important;
+    border-radius: 15px !important;
+    background: linear-gradient(168.35deg,
+            $IrisBlue 139.58%,
+            $Swamp 592.83%) !important;
+}
+
+.signInFooter {
+    height: 100px;
+}

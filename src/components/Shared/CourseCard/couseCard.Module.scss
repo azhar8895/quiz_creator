@@ -1,0 +1,102 @@
+@import '../../../assets/main';
+
+@mixin cardProps($selector, $color) {
+  .#{$selector} {
+    border-color: $color;
+    color: $color;
+    background-color: rgba($color: $color, $alpha: 0.1) !important;
+    @content;
+  }
+}
+
+$cardVariants: (
+  videoCard: $jazzberryJam,
+  podcastCard: $Cerulean,
+  audioCard: $darkGoldenrod,
+  articleCard: $indigo,
+  coursesCard: $IrisBlue,
+);
+
+@each $key, $value in $cardVariants {
+  @include cardProps($key, $value);
+}
+
+@mixin chipProps($selector, $color) {
+  .#{$selector} {
+    border-color: $color;
+    color: $white !important;
+    background-color: $color !important;
+    @content;
+  }
+}
+
+$chipVariants: (
+  videoChip: $jazzberryJam,
+  podcastChip: $Cerulean,
+  audioChip: $darkGoldenrod,
+  articleChip: $indigo,
+  coursesChip: $IrisBlue,
+);
+
+@each $key, $value in $chipVariants {
+  @include chipProps($key, $value);
+}
+
+.courseCard {
+  height: 248px;
+  // min-width: 424px;
+  width: 100%;
+  border-top: 9px solid;
+  border-radius: 9px;
+  background-color: $Silver;
+}
+.peerSection {
+  height: 33px;
+  padding: 4px;
+  width: 110px;
+  // border-top: 9px solid;
+  border-radius: 5px;
+  color: rgba($color: $surfiGreen, $alpha: 0.6);
+  background-color: rgba($color: $persianGreen, $alpha: 0.1) !important;
+}
+
+.courseCardContent {
+  height: 120px;
+}
+
+.courseCardDesc {
+  color: $dimGrey2 !important;
+}
+
+.iconButton {
+  font-size: 50px !important;
+  padding: 12px;
+  border: 1px solid;
+}
+
+.linkStyle {
+  color: inherit;
+  text-decoration: inherit;
+
+  &:hover {
+    color: inherit;
+    text-decoration: inherit;
+  }
+}
+
+@include mediaQuery(
+  (
+    courseCard: (
+      height: 248,
+      // min-width: 424,
+    ),
+    courseCardContent: (
+      height: 120,
+    ),
+    peerSection: (
+      height: 33,
+      padding: 4,
+      width: 110,
+    ),
+  )
+);

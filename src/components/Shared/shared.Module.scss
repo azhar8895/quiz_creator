@@ -1,0 +1,430 @@
+@import '../../assets/main';
+
+// Headings
+
+.heading0 {
+  font-size: 60px;
+}
+
+.heading1 {
+  font-size: 50px;
+}
+
+.heading2 {
+  font-size: 36px;
+}
+
+.heading3 {
+  font-size: 24px;
+}
+
+.heading4 {
+  font-size: 22px;
+}
+
+.heading5 {
+  font-size: 20px;
+}
+
+.heading6 {
+  font-size: 18px;
+}
+
+.heading30 {
+  font-size: 30px;
+}
+
+.heading32 {
+  font-size: 32px;
+}
+
+.heading36 {
+  font-size: 36px;
+}
+
+// Texts
+
+.text0 {
+  font-size: 16px;
+}
+
+.text1 {
+  font-size: 14px;
+}
+
+.text2 {
+  font-size: 12px;
+}
+
+.text3 {
+  font-size: 10px;
+}
+
+.text4 {
+  font-size: 8px;
+}
+
+.text5 {
+  font-size: 6px;
+}
+
+.text18 {
+  font-size: 18px;
+}
+
+.text22 {
+  font-size: 22px;
+}
+
+.text24 {
+  font-size: 24px;
+}
+
+// Welcome Section
+
+.welcomeSection {
+  height: 92px;
+  background-color: $white;
+  padding: 0px 30px;
+}
+
+.lastSessionTopic {
+  max-width: 175px;
+}
+
+.resumeSessionBtn {
+  background: rgba(0, 168, 154, 0.12) !important;
+  box-shadow: none !important;
+  color: $persianGreen !important;
+}
+
+.StopSessionBtn {
+  cursor: pointer;
+  background: $RadicalRed !important;
+  color: $White !important;
+  box-shadow: none !important;
+}
+
+.liveChip {
+  background: $carmine;
+  border-radius: 24px;
+  color: white;
+  padding: 3px 5px;
+}
+
+// Ability with percentage
+
+.ability {
+  font-weight: 500;
+}
+
+.percentage {
+  color: $persianGreen;
+}
+
+.HouseCardDesign {
+  border-top-left-radius: 30px;
+  border: none;
+  border-top-right-radius: 30px;
+}
+
+.HouseCardBody {
+  position: relative;
+  z-index: -1;
+  border: none;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.HouseCardBodynew {
+  border: none;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+// Custom Table
+
+.tableContainer {
+  max-height: 650px;
+}
+
+.tableContainer::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+}
+
+.tableContainer::-webkit-scrollbar-track {
+  background: $ghostWhite;
+}
+
+.tableContainer::-webkit-scrollbar-thumb {
+  background: $persianGreen;
+  border-radius: 6px;
+}
+
+.tableHeading {
+  font-family: Inter !important;
+  background: $lightCyan !important;
+  // min-width: 190px;
+}
+
+.tableSortIcon {
+  fill: $black !important;
+  stroke: $black;
+  stroke-width: 2.7px;
+  transform: rotate(90deg);
+  font-size: 15px !important;
+}
+
+.tablePagination {
+  p {
+    margin-bottom: 0px !important;
+  }
+}
+
+// Dotted Input Upload
+
+.dottedInput {
+  border: 0.5px dashed $persianGreen;
+  border-radius: 5px;
+}
+
+.dottedInputText {
+  color: $eclipse;
+  font-weight: 500;
+}
+
+.accounts {
+  color: $PersianGreen;
+  font-size: 20px;
+}
+
+.linearProgress {
+  height: 2px !important;
+  color: $PersianGreen;
+}
+
+.card1 {
+  // margin-top: 12px;
+  border: 2px dashed $TurquoiseBlue;
+  box-shadow: none;
+}
+
+.iconText {
+  margin-top: 50%;
+}
+
+.addIcon {
+  color: $TurquoiseBlue;
+  font-size: 40px !important;
+  cursor: pointer;
+}
+
+.card2 {
+  // margin-top: 12px;
+  border-bottom: 4px solid $PersianGreen;
+  // margin-left: 12px;
+}
+
+.moreHorizonIcon {
+  margin-left: 89%;
+  margin-top: -24px;
+  font-size: 34px !important;
+  color: $PersianGreen;
+}
+
+.imageStyle {
+  height: 80px !important;
+  width: 80px !important;
+  border-radius: 50%;
+}
+
+.secoundImg {
+  position: relative;
+  left: 44%;
+  bottom: 25px;
+}
+
+.personalProfile {
+  text-align: center;
+  margin: 0;
+  font-size: 14px;
+  color: $RobinsEggBlue;
+}
+
+.para {
+  text-align: center;
+  margin: 0;
+  font-size: 14px;
+}
+
+.mainDiv {
+  background-color: white;
+  height: 100vh;
+}
+
+.colorAddAccount {
+  color: $RobinsEggBlue;
+}
+
+.tableWidth {
+  width: 200px;
+}
+
+// Modal Box
+
+.modalBox {
+  outline: none;
+  box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.12);
+}
+
+.modalTopBorder {
+  height: 10px;
+  background: linear-gradient(
+    131.62deg,
+    $robinsEggBlue -6.12%,
+    $persianGreen 82.96%
+  );
+}
+
+// Profile Picture
+
+.imageDiv {
+  border-color: $IrisBlue !important;
+}
+
+// Session Details
+
+$barColorVariants: (
+  goodBehaviorBar: $persianGreen,
+  neutralBehaviorBar: $santasGrey,
+  badBehaviorBar: $burntOrange,
+);
+
+@mixin sessionBarProps($selector, $bgcolor) {
+  .#{$selector} {
+    background: $bgcolor;
+  }
+}
+
+.sessionDetails {
+  height: calc(100% - 42px);
+  width: calc(100% - 200px);
+  outline: none;
+  box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.12);
+  .firstBox {
+    padding-left: 34px;
+    background: $persianGreen;
+  }
+  .profileImage {
+    height: 197px;
+    width: 197px;
+  }
+  .visitedPage {
+    color: $Firefly;
+  }
+}
+
+.sessionTime {
+  color: $echoBlue;
+}
+
+.sessionBar {
+  height: calc(50% - 80px);
+}
+
+.playerWrapper {
+  position: relative;
+  // padding-top: 56.25% /* Player ratio: 100 / (1280 / 720) */;
+}
+
+.reactPlayer {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.toolbarclass {
+  background: rgba($color: $persianGreen, $alpha: 0.3) !important;
+}
+
+
+.editorClass {
+  height: 160px !important;
+  overflow: hidden;
+  border: 1px solid #dbe3eb;
+}
+
+@each $key, $value in $barColorVariants {
+  @include sessionBarProps($key, $value);
+}
+
+// Media Query
+
+@include mediaQuery(
+  (
+    welcomeSection: (
+      height: 92,
+    ),
+    TableContainer: (
+      max-height: 650,
+    ),
+    modalTopBorder: (
+      height: 10,
+    ),
+    heading0: (
+      font-size: 60,
+    ),
+    heading1: (
+      font-size: 50,
+    ),
+    heading2: (
+      font-size: 36,
+    ),
+    heading3: (
+      font-size: 24,
+    ),
+    heading4: (
+      font-size: 22,
+    ),
+    heading5: (
+      font-size: 20,
+    ),
+    heading6: (
+      font-size: 18,
+    ),
+    heading30: (
+      font-size: 30,
+    ),
+    heading32: (
+      font-size: 32,
+    ),
+    heading36: (
+      font-size: 36,
+    ),
+    text0: (
+      font-size: 16,
+    ),
+    text1: (
+      font-size: 14,
+    ),
+    text2: (
+      font-size: 12,
+    ),
+    text3: (
+      font-size: 10,
+    ),
+    text4: (
+      font-size: 8,
+    ),
+    text5: (
+      font-size: 6,
+    ),
+    text22: (
+      font-size: 22,
+    ),
+    text24: (
+      font-size: 24,
+    ),
+  )
+);

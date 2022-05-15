@@ -3,11 +3,15 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import AppRoutes from "./config/routes";
+import SignIn from "./components/sign-in/index.js";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    {/* <SignIn /> */}
+    {/* <App/> */}
+    <AppRoutes />
   </React.StrictMode>
 );
 
