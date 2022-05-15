@@ -10,6 +10,7 @@ import SignIn from '../components/sign-in'
 import App from "../App";
 import SignUp from "../components/sign-up";
 import Home from "../components/home";
+import SolveQuiz from "../components/solvequiz/playGround";
 
 const AppRoutes = () => {
     return (
@@ -20,6 +21,7 @@ const AppRoutes = () => {
                     <Route path="/login" element={<SignIn/>} />
                     <Route path="/sign-up" element={<SignUp/>} />
                     <Route path="/home" element={<Home/>} />
+                    <Route path="/quiz/:permid" element={<SolveQuiz/>} />
                 </Routes>
             </Router>
         // </Theme>
